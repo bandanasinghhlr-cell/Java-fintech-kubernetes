@@ -15,7 +15,7 @@ spec:
         app: backend
     spec:
       nodeSelector:
-        kubernetes.io/hostname: worker-node-1
+        kubernetes.io/hostname: worker-node
       containers:
         - name: backend
           image: deviliam/java-banking-backend:1.1
