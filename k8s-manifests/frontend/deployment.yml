@@ -15,7 +15,7 @@ spec:
         app: frontend
     spec:
       nodeSelector:
-        kubernetes.io/hostname: worker-node
+        kubernetes.io/hostname: worker-1
       containers:
         - name: frontend
           image: deviliam/java-banking-frontend:1.0
