@@ -10,8 +10,7 @@ RUN npm ci
 
 COPY frontend/ .
 
-ARG VITE_API_URL=http://localhost:8080/api
-ENV VITE_API_URL=$VITE_API_URL
+ARG VITE_API_URL=http://54.88.44.49/:30080/api
 
 RUN npm run build
 
