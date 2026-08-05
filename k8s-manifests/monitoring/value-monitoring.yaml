@@ -34,7 +34,7 @@ grafana:
 alertmanager:
   alertmanagerSpec:
     nodeSelector:
-      kubernetes.io/hostname: monitoring-node
+      kubernetes.io/hostname: worker-1
     storage:
       volumeClaimTemplate:
         spec:
