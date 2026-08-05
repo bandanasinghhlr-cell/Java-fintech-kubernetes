@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 
 spec:
-  ignressClassname: nginx
+  ignressClassName: nginx
   rules:
     - host: bank.misswomania.online
       http:
