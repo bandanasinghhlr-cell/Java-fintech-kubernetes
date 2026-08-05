@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: banking-Ingress
+  namespace: banking
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+
+
+spec:
+  rules:
+    - host: bank.misswomania.online
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              services:
+                name: frontend-service
+                port:
+                  number: 80
+    - host: bank.misswomania.online
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              services:
+                name: backend-service
+                port:
+                  number: 8080
