@@ -20,7 +20,7 @@ spec:
                 port:
                   number: 80
 
-    - host: bank.misswomania.online
+    - host: api.bank.misswomania.online
       http:
         paths:
           - path: /
