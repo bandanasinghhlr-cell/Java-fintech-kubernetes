@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
-kind: Ingress
+kind: ingress
 metadata:
-  name: banking-Ingress
+  name: banking-ingress
   namespace: banking
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
