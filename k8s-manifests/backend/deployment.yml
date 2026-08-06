@@ -18,7 +18,7 @@ spec:
         kubernetes.io/hostname: worker-1
       containers:
         - name: backend
-          image: deviliam/java-banking-backend:1.1
+          image: bandanaa/java-fintech-backend:1.4 
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -44,11 +44,11 @@ spec:
               value: "*"
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "100m"
+              memory: "512Mi"
+              cpu: "250m"
             limits:
-              memory: "256Mi"
-              cpu: "250m"    
+              memory: "1Gi"
+              cpu: "500m"    
           readinessProbe:
             httpGet: 
               path: /actuator/health
