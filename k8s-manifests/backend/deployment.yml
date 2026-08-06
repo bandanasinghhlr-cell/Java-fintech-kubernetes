@@ -18,7 +18,7 @@ spec:
         kubernetes.io/hostname: worker-1
       containers:
         - name: backend
-          image: bandanaa/java-fintech-backend:1.4 
+          image: bandanaa/java-fintech-backend:1.5
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -40,7 +40,6 @@ spec:
             - name: JWT_EXPIRATION_MS
               value: "86400000"
             - name: CORS_ALLOWED_ORIGIN
-              value: "*"
               value: "*"
           resources:
             requests:
