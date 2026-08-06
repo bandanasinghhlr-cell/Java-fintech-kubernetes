@@ -18,7 +18,7 @@ spec:
         kubernetes.io/hostname: worker-1
       containers:
         - name: frontend
-          image: deviliam/java-banking-frontend:1.0
+          image: bandanaa/java-fintech-frontend:1.4
           imagePullPolicy: Always
           ports:
             - containerPort: 80
